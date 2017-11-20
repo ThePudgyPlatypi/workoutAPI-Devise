@@ -1,4 +1,6 @@
 class UserEquipmentController < ApplicationController
+  before_action :authenticate_user!
+
   def index
 		@user_equipment = UserEquipment.all
 		@user = User.find(current_user.id)

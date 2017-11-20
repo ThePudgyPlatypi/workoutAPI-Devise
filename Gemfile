@@ -17,11 +17,10 @@ gem 'puma', '~> 3.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
-# JSON Web Token
-gem 'jwt'
-#Simple_command - for making helpers between Controller and Model
-gem 'simple_command'
+# gem 'bcrypt', '~> 3.1.7'
+# adding devise-token-auth
+gem 'devise_token_auth'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

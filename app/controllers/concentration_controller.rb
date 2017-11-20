@@ -1,5 +1,6 @@
 class ConcentrationController < ApplicationController
-  def index
+	before_action :authenticate_user!
+  	def index
 		respond_with Concentration.all
 	end
 end
